@@ -28,7 +28,7 @@ $(document).ready(function(){
     var contactStreetAddress = $("input#contactStreetAddress").val();
     var contact = combineInfo(contactName, contactNumber, contactEmail, contactStreetAddress);
     $('#contactList').append(contact);
-    $("div#contactList").children("p.clickable").first().click(function(){
+    $("p.clickable").click(function(){
       this.remove();
     });
   });

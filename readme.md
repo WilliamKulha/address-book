@@ -27,7 +27,7 @@ _If you have any suggestions or problems, shoot me an email at kulha.william@gma
 
 _javaScript_\
 _jQuery_\
-_Bootstrap3_\
+_Bootstrap3_
 
 ### License
 
