@@ -12,7 +12,14 @@
 //  $(addNewContact).appendto('contacts');
 
 function combineInfo(name, number, email, address) {
-  return ("<p class=\"clickable\">" + name + "<br>" + number + "<br>" + email + "<br>" + address + "</p>");
+  return ('<div class="panel panel-default contactpanel">' +
+  '<div class="panel-heading">' +
+  '<h3 class="panel-title">' +
+  name + '<a data-toggle="close" href=".contactpanel" class="close">&times;</a>' +
+  '</h3> </div>' +
+  '<div class="panel-body">' +
+  number + '<br>' + email + '<br>' + address +
+  '</div> </div>');
 };
 
 
@@ -28,8 +35,8 @@ $(document).ready(function(){
     var contactStreetAddress = $("input#contactStreetAddress").val();
     var contact = combineInfo(contactName, contactNumber, contactEmail, contactStreetAddress);
     $('#contactList').append(contact);
-    $("div#contactList").children("p.clickable").first().click(function(){
-      this.remove();
+    $('div.contactpanel').children("button.remContact").click(function(){
+      $(this).remove();
     });
   });
 
