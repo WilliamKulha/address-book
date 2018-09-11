@@ -12,7 +12,7 @@
 //  $(addNewContact).appendto('contacts');
 
 function combineInfo(name, number, email, address) {
-  return ("<p class=\"clickable\">" + name + "<br>" + number + "<br>" + email + "<br>" + address + "</p>");
+  return ("<p class=\"clickable\">Name: " + name + "<br> Phone: " + number + "<br> Email: " + email + "<br>Address: " + address + "</p>");
 };
 
 
