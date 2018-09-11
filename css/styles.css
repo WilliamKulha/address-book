@@ -1,3 +1,17 @@
 .well-padded {
   padding:2em;
 }
+
+.contact-panel {
+  border-width:2px;
+  border-radius:20px;
+  border-color: black;
+}
+
+.clickable:hover {
+
+  color:#0000cd;
+  text-decoration:underline;
+  cursor:pointer;
+
+}
